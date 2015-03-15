@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug List</title>
+    <script src="http://autobahn.s3.amazonaws.com/autobahnjs/latest/autobahn.min.jgz"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+    <script src="bower_components/es6-promise/promise.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+
+    <link rel="import" href="bower_components/polymer/polymer.html">
+</head>
+   <body unresolved fit>
+   <header>
+       <h1>Bug List</h1>
+   </header>
+    <template is="auto-binding">
+        <section>
+            <input type="text" value="{{newBug}}">
+            <button on-click="{{addBug}}">Add Bug</button>
+        </section>
+        <section>
+            <h2>Backlog</h2>
+            <ul class="bugs" id="backlog">
+                <template repeat="{{bugs}}">
+                    <template if="{{status == 'open'}}">
+                        <li>
+                            {{description}} <a href="#" on-click="{{moveToWorking}}">In Progress</a>
+                        </li>
+                    </template>
+                </template>
+            </ul>
+        </section>
+        <section>
+            <h2>In Progress</h2>
+            <ul class="bugs" id="working">
+                <template repeat="{{bugs}}">
+                    <template if="{{status == 'working'}}">
+                        <li>
+                            {{description}} <a href="#" on-click="{{moveToDone}}">Finish</a>
+                        </li>
+                    </template>
+                </template>
+            </ul>
+        </section>
+        <section>
+            <h2>Done</h2>
+            <ul class="bugs" id="done">
+                <template repeat="{{bugs}}">
+                    <template if="{{status == 'done'}}">
+                        <li>
+                            {{description}} <a href="#" on-click="{{moveToOpen}}">Open</a>
+                        </li>
+                    </template>
+                </template>
+            </ul>
+        </section>
+    </template>
+   <script src="scripts/app.js"></script>
+   <script src="scripts/index.js"></script>
+   </body>
+</html>

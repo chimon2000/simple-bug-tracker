@@ -1,0 +1,14 @@
+[
+  {
+    "description":"This is bug 1",
+    "status": "open"
+  },
+  {
+    "description":"This is bug 2",
+    "status": "open"
+  },
+  {
+    "description":"This is bug 3",
+    "status": "open"
+  }
+]

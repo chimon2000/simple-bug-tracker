@@ -1,0 +1,26 @@
+{
+  "name": "simple-bug-tracker",
+  "version": "1.0.0",
+  "authors": [
+    "chimon2000 <chimon@my.com>"
+  ],
+  "keywords": [
+    "wamp"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "es6-promise": "~2.0.1",
+    "polymer": "Polymer/polymer#~0.5.5",
+    "lodash": "~3.5.0",
+    "webcomponentsjs": "~0.5.5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "simple-bug-tracker",
+  "version": "1.0.0",
+  "description": "A simple bug tracker that uses WAMP",
+  "main": "node/app.js",
+  "dependencies": {
+    "autobahn": "~0.9.6",
+    "lodash": "~3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wamp"
+  ],
+  "author": {
+    "name": "Ryan Edge",
+    "email": "chimon@my.com",
+    "url": "https://github.com/chimon2000"
+  },
+  "license": "MIT"
+}
